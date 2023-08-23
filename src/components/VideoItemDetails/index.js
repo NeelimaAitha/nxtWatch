@@ -8,8 +8,8 @@ import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import Sidebar from '../Sidebar'
 
-import ThemeContext from '../../Context/ThemeContext'
-import SavedVideosContext from '../../Context/SavedVideosContext'
+import ThemeContext from '../../context/ThemeContext'
+import SavedVideosContext from '../../context/SavedVideoContext'
 
 import {
   MainBody,
@@ -33,7 +33,7 @@ import {
   ChannelDetailsText,
   ChannelDetailsText2,
   VideoDescriptionText,
-} from './styledComponents'
+} from './styledComponent'
 
 const apiStatusConstants = {
   initial: 'INITIAL',

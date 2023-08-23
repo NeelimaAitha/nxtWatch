@@ -15,11 +15,11 @@ import {
   NoVideosContainer,
   NoVideosImg,
   FailureText,
-} from './styledComponents'
+} from './styledComponent'
 
 import TrendingVideoCard from '../TrendingVideoCard'
-import SavedVideosContext from '../../Context/SavedVideosContext'
-import ThemeContext from '../../Context/ThemeContext'
+import SavedVideosContext from '../../context/SavedVideoContext'
+import ThemeContext from '../../context/ThemeContext'
 
 const SavedVideos = () => {
   const savedList = themeValue => {

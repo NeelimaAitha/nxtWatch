@@ -2,7 +2,7 @@ import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
-import ThemeContext from '../../Context/ThemeContext'
+import ThemeContext from '../../context/ThemeContext'
 import {
   LoginContainer,
   LoginCardContainer,
@@ -123,7 +123,7 @@ class login extends Component {
                     Show Password
                   </ShowPasswordLabel>
                   <div>
-                    <LoginButton type="sumbit">Login</LoginButton>
+                    <LoginButton type="submit">Login</LoginButton>
                   </div>
                   <ErrorMsg>{isError && `* ${errorMsg}`}</ErrorMsg>
                 </Form>
