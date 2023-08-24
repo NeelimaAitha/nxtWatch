@@ -95,6 +95,7 @@ class App extends Component {
               <ProtectedRoute exact path="/" component={Home} />
               <ProtectedRoute exact path="/trending" component={Trending} />
               <ProtectedRoute exact path="/gaming" component={Gaming} />
+
               <ProtectedRoute
                 exact
                 path="/saved-videos"
@@ -105,7 +106,7 @@ class App extends Component {
                 path="/videos/:id"
                 component={VideoItemDetails}
               />
-              <ProtectedRoute exact path="/not-found" component={NotFound} />
+              <Route exact path="/not-found" component={NotFound} />
               <Redirect to="/not-found" />
             </Switch>
           </ActiveMenuContext.Provider>
